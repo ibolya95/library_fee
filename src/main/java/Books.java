@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Books {
+public abstract class Books {
 
     protected String titleOfBook;
     protected LocalDate expireDate;
@@ -17,6 +17,6 @@ public class Books {
     public LocalDate getExpireDate() {
         return expireDate;
     }
-
+    public abstract Result countFees ();
 
 }
