@@ -2,8 +2,8 @@ import java.time.LocalDate;
 
 public class Books {
 
-    private String titleOfBook;
-    private LocalDate expireDate;
+    protected String titleOfBook;
+    protected LocalDate expireDate;
 
     public Books(String titleOfBook, LocalDate expireDate) {
         this.titleOfBook = titleOfBook;

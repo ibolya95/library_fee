@@ -1,10 +1,6 @@
 
-import java.awt.print.Book;
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
-
 
 public class Details extends Books {
 
@@ -12,16 +8,14 @@ public class Details extends Books {
         super(titleOfBook, expireDate);
     }
 
-    Books books = new Books(getTitleOfBook(), getExpireDate());
-
-    public void countFees (String title, LocalDate expireDate) {
+    public void countFees () {
         LocalDate today = LocalDate.now();
         long feePerDays = 5;
         long numberOfDays = ChronoUnit.DAYS.between(expireDate, today);
         long fee = feePerDays*numberOfDays;
 
         if(expireDate.isAfter(today)) {
-            System.out.println("A " + title + " című könyv még nem járt le.\n" +
+            System.out.println("A " + titleOfBook + " című könyv még nem járt le.\n" +
                     "A lejáratig hátralévő napok száma: " + Math.abs(numberOfDays) + " nap." );
         } else if(expireDate.isEqual(today)) {
             System.out.println("Még nincs büntetés. HOZD VISSZA A KÖNYVET MÉG MA!");
