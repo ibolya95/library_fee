@@ -21,8 +21,8 @@ public class Details extends Books {
         long fee = feePerDays*numberOfDays;
 
         if(expireDate.isAfter(today)) {
-            System.out.println("A " + title + " című könyv még nem járt le. \n " +
-                    "A lejáratig hátralévő napok száma: " + numberOfDays);
+            System.out.println("A " + title + " című könyv még nem járt le.\n" +
+                    "A lejáratig hátralévő napok száma: " + Math.abs(numberOfDays) + " nap." );
         } else if(expireDate.isEqual(today)) {
             System.out.println("Még nincs büntetés. HOZD VISSZA A KÖNYVET MÉG MA!");
         } else if(expireDate.isBefore(today)) {
