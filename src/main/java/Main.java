@@ -33,9 +33,7 @@ public class Main {
             +36204379461
 
             daabbcc57@gmail.com
-
             alkhniab.saif@gmail.com
-
             sayfshalan@gmail.com*/
 
     private static void notExpiredBook(String title, long numberOfDay) {
