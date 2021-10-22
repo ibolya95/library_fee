@@ -29,6 +29,15 @@ public class Main {
 
     }
 
+    /*
+            +36204379461
+
+            daabbcc57@gmail.com
+
+            alkhniab.saif@gmail.com
+
+            sayfshalan@gmail.com*/
+
     private static void notExpiredBook(String title, long numberOfDay) {
         System.out.println("A " + title + " című könyv még nem járt le.\n" +
                 "A lejáratig hátralévő napok száma: " + Math.abs(numberOfDay) + " nap.");
