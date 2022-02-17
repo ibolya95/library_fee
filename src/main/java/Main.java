@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Books book1 = new Details("DD", LocalDate.of(2021, 8, 2));
+        Books book1 = new Details("DD", LocalDate.of(2022, 8, 2));
         Books book2 = new Details("CC", LocalDate.of(2021, 8, 10));
         Books book3 = new Details("BB", LocalDate.of(2021, 10, 22));
 
@@ -28,13 +28,6 @@ public class Main {
         }
 
     }
-
-    /*
-            +36204379461
-
-            daabbcc57@gmail.com
-            alkhniab.saif@gmail.com
-            sayfshalan@gmail.com*/
 
     private static void notExpiredBook(String title, long numberOfDay) {
         System.out.println("A " + title + " című könyv még nem járt le.\n" +
