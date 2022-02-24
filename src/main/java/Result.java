@@ -1,7 +1,7 @@
 public class Result {
-    long fee;
-    long numberOfDay;
-    String title;
+   private long fee;
+   private long numberOfDay;
+   private String title;
 
     public Result(long fee, long numberOfDay, String title) {
         this.fee = fee;
